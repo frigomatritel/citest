@@ -8,4 +8,9 @@ public class StringConcatenatorTest {
     public void concatTest() {
         Assert.assertEquals("Majom", StringConcatenator.concat("Ma", "jom"));
     }
+
+    @Test
+    public void concatNull() {
+        Assert.assertEquals("null-najon", StringConcatenator.concat(null, "-najon"));
+    }
 }
